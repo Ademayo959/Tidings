@@ -8,7 +8,7 @@ function App() {
 
   const [articles, setArticles] = useState([]);
 
-  const sampleArticles = [
+  /*const sampleArticles = [
     {
       "id": "7747c2e03d2bdb7a98fbbed6f896951d",
       "title": "Live No Kings protest updates: Massive crowds march, rally throughout Bay Area",
@@ -169,7 +169,7 @@ function App() {
         "country": "us"
       }
     }
-  ]
+  ]*/
 
   useEffect(() => {
     fetch(url)
