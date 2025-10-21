@@ -2,9 +2,10 @@ import React, { useState, useEffect } from 'react';
 
 
 function App() {
+  const proxy = "https://corsproxy.io/?";
   const apikey = '43e1ada081d1b3fb3555276b3bc9ed21';
   const category = 'general';
-  const url = `https://gnews.io/api/v4/top-headlines?category=${category}&lang=en&country=us&max=10&apikey=${apikey}`;
+  const url = `${proxy}https://gnews.io/api/v4/top-headlines?category=${category}&lang=en&country=us&max=10&apikey=${apikey}`;
 
   const [articles, setArticles] = useState([]);
 
